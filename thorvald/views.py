@@ -4,7 +4,10 @@ from rest_framework import viewsets, generics
 from .models import Fighter
 from .serializers import FighterSerializer
 from nanoid import generate
+from django.shortcuts import render
 
+def home(request):
+    return render(request, 'home.html')
 
 class FighterViewSet(viewsets.ModelViewSet):
     queryset = Fighter.objects.all()

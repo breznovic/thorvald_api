@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      h3 {
+        font-style: italic;
+        color: #333;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        margin: 0px 0px 10px 30px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #0066cc;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Welcome to API for Thorvald's Revenge App</h3>
+    <ul>
+      <li><a href="{% url 'get_enemies' %}">Get Enemies</a></li>
+      <li><a href="{% url 'get_thorvald' %}">Get Thorvald</a></li>
+    </ul>
+  </body>
+</html>
